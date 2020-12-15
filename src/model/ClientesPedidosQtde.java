@@ -5,125 +5,84 @@
  */
 package model;
 
+import java.security.Timestamp;
+import java.util.Date;
+
 /**
- *
- * @author wende
+ * @brief   Nome da Classe:   ClientesPedidosQtde
+ * @package Nome do Pacote:   model
+ * @project Nome do Projeto:  Northwind 
+ * @author  Autor:            Marcelo do Nascimento <marcelo.nascimento@alunos.sc.senac.br>
+ * @date    Data:             15/12/2020
  */
-public class Clientes {
-    private String CEP;
-    private String Cidade;
-    private String Endereco;
-    private String FAX;
-    private int    IDCliente;
-    private String NomeCompanhia;
-    private String NomeContato;
-    private String Pais;
-    private String Regiao;
-    private String Telefone;
-    private String TituloContato;    
+public class ClientesPedidosQtde {
 
-    public String getCEP() {
-        return CEP;
+    private String nomeContato;
+    private String endereco;
+    private String cidade;
+    private int idOrdem;
+    private int qtde;
+    private Date dataOrdem;
+
+    public ClientesPedidosQtde() {
     }
 
-    public void setCEP(String CEP) {
-        this.CEP = CEP;
-    }
-
-    public String getCidade() {
-        return Cidade;
-    }
-
-    public void setCidade(String Cidade) {
-        this.Cidade = Cidade;
-    }
-
-    public String getEndereco() {
-        return Endereco;
-    }
-
-    public void setEndereco(String Endereco) {
-        this.Endereco = Endereco;
-    }
-
-    public String getFAX() {
-        return FAX;
-    }
-
-    public void setFAX(String FAX) {
-        this.FAX = FAX;
-    }
-
-    public int getIDCliente() {
-        return IDCliente;
-    }
-
-    public void setIDCliente(int IDCliente) {
-        this.IDCliente = IDCliente;
-    }
-
-    public String getNomeCompanhia() {
-        return NomeCompanhia;
-    }
-
-    public void setNomeCompanhia(String NomeCompanhia) {
-        this.NomeCompanhia = NomeCompanhia;
+    public ClientesPedidosQtde(String nomeContato, String endereco, String cidade, int idOrdem, int qtde, Date dataOrdem) {
+        this.nomeContato = nomeContato;
+        this.endereco = endereco;
+        this.cidade = cidade;
+        this.idOrdem = idOrdem;
+        this.qtde = qtde;
+        this.dataOrdem = dataOrdem;
     }
 
     public String getNomeContato() {
-        return NomeContato;
+        return nomeContato;
     }
 
-    public void setNomeContato(String NomeContato) {
-        this.NomeContato = NomeContato;
+    public void setNomeContato(String nomeContato) {
+        this.nomeContato = nomeContato;
     }
 
-    public String getPais() {
-        return Pais;
+    public String getEndereco() {
+        return endereco;
     }
 
-    public void setPais(String Pais) {
-        this.Pais = Pais;
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 
-    public String getRegiao() {
-        return Regiao;
+    public String getCidade() {
+        return cidade;
     }
 
-    public void setRegiao(String Regiao) {
-        this.Regiao = Regiao;
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
     }
 
-    public String getTelefone() {
-        return Telefone;
+    public int getIdOrdem() {
+        return idOrdem;
     }
 
-    public void setTelefone(String Telefone) {
-        this.Telefone = Telefone;
+    public void setIdOrdem(int idOrdem) {
+        this.idOrdem = idOrdem;
     }
 
-    public String getTituloContato() {
-        return TituloContato;
+    public int getQtde() {
+        return qtde;
     }
 
-    public void setTituloContato(String TituloContato) {
-        this.TituloContato = TituloContato;
+    public void setQtde(int qtde) {
+        this.qtde = qtde;
     }
-    
-    public Clientes(){}
 
-    public Clientes(String CEP, String Cidade, String Endereco, String FAX, int IDCliente, String NomeCompanhia, String NomeContato, String Pais, String Regiao, String Telefone, String TituloContato) {
-        this.CEP = CEP;
-        this.Cidade = Cidade;
-        this.Endereco = Endereco;
-        this.FAX = FAX;
-        this.IDCliente = IDCliente;
-        this.NomeCompanhia = NomeCompanhia;
-        this.NomeContato = NomeContato;
-        this.Pais = Pais;
-        this.Regiao = Regiao;
-        this.Telefone = Telefone;
-        this.TituloContato = TituloContato;
+    public Date getDataOrdem() {
+        return dataOrdem;
     }
-    
+
+    public void setDataOrdem(Date dataOrdem) {
+        this.dataOrdem = dataOrdem;
+    }
+
+   
 }
